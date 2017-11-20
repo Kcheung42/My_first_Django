@@ -1,0 +1,10 @@
+{% extends './master_templates/base.html' %}
+{% load staticfiles %}
+{% load render_bundle from webpack_loader %}
+{% block head_title %}
+	Browse Item
+{% endblock head_title %}
+{% block body %}
+	<div id='container'> </div>
+	{% render_bundle 'browse_item' %}
+{% endblock body %}
